@@ -1,0 +1,160 @@
+/*#region Page: Home */
+.Home {
+  align-items: flex-start;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-height: 80vh;
+  padding-top: 2rem;
+  width: 85%;
+
+  .Home__title {
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .Home__information-container {
+    height: auto;
+    margin-top: 2rem;
+
+    .Home__text {
+      font-size: 24px;
+    }
+
+    .Home__cta-container {
+      padding: 2rem 0 0 0;
+      position: relative;
+      z-index: 100;
+
+      .Home__cta {
+        align-items: center;
+        background: white;
+        border-radius: 40px;
+        cursor: pointer;
+        display: flex;
+        height: 65px;
+        justify-content: center;
+        width: 180px;
+
+        & span {
+          color: #230b21;
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .Home__image {
+    height: 410px;
+    left: 0;
+    position: relative;
+    top: -135px;
+    width: 410.71px;
+    z-index: 99;
+
+    &::before {
+      position: absolute;
+    }
+
+    & svg {
+      animation: drop 1.5s ease-out;
+    }
+  }
+}
+
+.TopWave {
+  height: 100%;
+  margin-top: 0.2rem;
+  position: relative;
+  width: 100%;
+
+  & svg {
+    position: absolute;
+    bottom: 100%;
+    z-index: 999;
+  }
+}
+
+.Home__guide {
+  background-color: white;
+  min-height: 80vh;
+  z-index: 999;
+
+  .Home__guide-container {
+    color: #230b21;
+    margin: auto;
+    padding: 4rem 0;
+    width: 85%;
+
+    & h2 {
+      font-size: 40px;
+    }
+
+    & p {
+      font-size: 24px;
+      margin: 2rem 0;
+    }
+
+    .Home__guide-cta-container {
+      padding: 1rem 0 0 0;
+      position: relative;
+      z-index: 100;
+
+      .Home__guide-cta {
+        align-items: center;
+        background: #5d1f67;
+        border-radius: 40px;
+        cursor: pointer;
+        display: flex;
+        height: 65px;
+        justify-content: center;
+        width: 260px;
+
+        & span {
+          color: white;
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.Home__guide-image {
+  height: 410px;
+  right: 210px;
+  top: -160px;
+  position: relative;
+  width: 410.71px;
+  z-index: 99;
+
+  &::before {
+    position: absolute;
+  }
+
+  & svg {
+    animation: drop 1.5s ease-out;
+  }
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/*#region Media Queries */
+@media screen and (max-width: 1024px) {
+  .Home {
+    flex-direction: column;
+  }
+}
+/*#endregion /Media Queries */
+/*#endregion /Page: Home */

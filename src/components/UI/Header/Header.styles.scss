@@ -1,0 +1,19 @@
+/*#region UI: Header */
+.Header {
+  align-items: center;
+  color: white;
+  display: flex;
+  height: 18vh;
+  justify-content: space-between;
+  margin: auto;
+  width: 85%;
+}
+
+/*#region Media Queries */
+@media screen and (max-width: 1024px) {
+  .Header {
+    width: 85%;
+  }
+}
+/*#endregion /Media Queries */
+/*#endregion /UI: Header */
