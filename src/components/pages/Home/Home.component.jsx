@@ -8,8 +8,7 @@ import "./Home.styles.scss";
 import { ReactComponent as RobotHome } from "../../../assets/images/pageImages/robot-home.svg";
 import { ReactComponent as RobotGuide } from "../../../assets/images/pageImages/robot-guide.svg";
 import { ReactComponent as RobotCommunity } from "../../../assets/images/pageImages/robot-community.svg";
-import { ReactComponent as WaveTop } from "../../../assets/images/pageImages/wave-bottom.svg";
-import { ReactComponent as WaveBottom } from "../../../assets/images/pageImages/wave-bottom.svg";
+import { ReactComponent as Wave } from "../../../assets/images/pageImages/wave.svg";
 
 // Page: Home
 function Home() {
@@ -33,29 +32,31 @@ function Home() {
         </div>
       </div>
       <div className="TopWave">
-        <WaveTop />
+        <Wave />
       </div>
-      <div className="Home__guide">
-        <div className="Home__guide-container">
-          <h2>Not sure where to start?</h2>
-          <p>
-            The keyboard hobby can be pretty daunting for newbies. There are
-            lots of things to learn, and even more personal preferences to
-            discover. Luckily, we're here to help!
-          </p>
-          <p>Check out our beginners guide for all things keyboard below.</p>
-          <div className="Home__guide-cta-container">
-            <div className="Home__guide-cta">
-              <span>Keyboard Guide</span>
+      <div className="Home__background">
+        <div className="Home__guide">
+          <div className="Home__guide-container">
+            <h2>Not sure where to start?</h2>
+            <p>
+              The keyboard hobby can be pretty daunting for newbies. There are
+              lots of things to learn, and even more personal preferences to
+              discover. Luckily, we're here to help!
+            </p>
+            <p>Check out our beginners guide for all things keyboard below.</p>
+            <div className="Home__guide-cta-container">
+              <div className="Home__guide-cta">
+                <span>Keyboard Guide</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="Home__guide-image">
-          <RobotGuide />
+          <div className="Home__guide-image">
+            <RobotGuide />
+          </div>
         </div>
       </div>
       <div className="BottomWave">
-        <WaveBottom />
+        <Wave />
       </div>
       <div className="Home__community">
         <div className="Home__community-container">

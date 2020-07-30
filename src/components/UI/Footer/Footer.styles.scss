@@ -13,7 +13,7 @@
   .Footer__container {
     margin: auto;
     padding: 6rem 0 4rem 0;
-    width: 85%;
+    width: 70%;
 
     .Footer__container-title {
       font-size: 30px;
@@ -38,11 +38,11 @@
 
       .Footer__short-links {
         padding: 1rem 0;
+        min-width: 240px;
 
         & h4 {
           font-size: 22px;
           font-weight: 500;
-          min-width: 159px;
           padding: 8px 0;
         }
 
@@ -94,6 +94,15 @@
 /*#region Media Queries */
 @media screen and (max-width: 1024px) {
   .Footer {
+    .Footer__container {
+      width: 85%;
+
+      .Footer__short-link-container {
+        .Footer__short-links {
+          min-width: 159px;
+        }
+      }
+    }
   }
 }
 /*#endregion /Media Queries */
