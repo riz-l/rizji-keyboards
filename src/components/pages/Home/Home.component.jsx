@@ -7,7 +7,9 @@ import "./Home.styles.scss";
 // Import: Assets
 import { ReactComponent as RobotHome } from "../../../assets/images/pageImages/robot-home.svg";
 import { ReactComponent as RobotGuide } from "../../../assets/images/pageImages/robot-guide.svg";
-import { ReactComponent as WaveTop } from "../../../assets/images/pageImages/wave-top.svg";
+import { ReactComponent as RobotCommunity } from "../../../assets/images/pageImages/robot-community.svg";
+import { ReactComponent as WaveTop } from "../../../assets/images/pageImages/wave-bottom.svg";
+import { ReactComponent as WaveBottom } from "../../../assets/images/pageImages/wave-bottom.svg";
 
 // Page: Home
 function Home() {
@@ -50,6 +52,26 @@ function Home() {
         </div>
         <div className="Home__guide-image">
           <RobotGuide />
+        </div>
+      </div>
+      <div className="BottomWave">
+        <WaveBottom />
+      </div>
+      <div className="Home__community">
+        <div className="Home__community-container">
+          <h2>Join the community</h2>
+          <p>
+            If you're in love with keyboards, you're not alone! We have a super
+            helpful (and super dedicated) community waiting for you.
+          </p>
+          <div className="Home__community-cta-container">
+            <div className="Home__community-cta">
+              <span>Sign Up</span>
+            </div>
+          </div>
+        </div>
+        <div className="Home__community-image">
+          <RobotCommunity />
         </div>
       </div>
     </div>

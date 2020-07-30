@@ -7,7 +7,7 @@
   margin: auto;
   min-height: 80vh;
   padding-top: 2rem;
-  width: 85%;
+  width: 70%;
 
   .Home__title {
     font-size: 48px;
@@ -69,10 +69,12 @@
   margin-top: 0.2rem;
   position: relative;
   width: 100%;
+  transform: rotate(180deg);
+  z-index: 10000;
 
   & svg {
     position: absolute;
-    bottom: 100%;
+    top: 100%;
     z-index: 999;
   }
 }
@@ -123,9 +125,84 @@
 }
 
 .Home__guide-image {
-  height: 410px;
+  height: 290px;
   right: 210px;
   top: -160px;
+  position: relative;
+  width: 410.71px;
+  z-index: 99;
+
+  &::before {
+    position: absolute;
+  }
+
+  & svg {
+    animation: drop 1.5s ease-out;
+  }
+}
+
+.BottomWave {
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  & svg {
+    position: absolute;
+    top: 100%;
+    z-index: 999;
+  }
+}
+
+.Home__community {
+  background-color: #230b21;
+  margin-top: 2rem;
+  min-height: 80vh;
+  z-index: 999;
+
+  .Home__community-container {
+    color: white;
+    margin: auto;
+    padding: 4rem 0;
+    width: 85%;
+
+    & h2 {
+      font-size: 40px;
+    }
+
+    & p {
+      font-size: 24px;
+      margin: 2rem 0;
+    }
+
+    .Home__community-cta-container {
+      padding: 1rem 0 0 0;
+      position: relative;
+      z-index: 100;
+
+      .Home__community-cta {
+        align-items: center;
+        background: white;
+        border-radius: 40px;
+        cursor: pointer;
+        display: flex;
+        height: 65px;
+        justify-content: center;
+        width: 150px;
+
+        & span {
+          color: #230b21;
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.Home__community-image {
+  height: 410px;
+  right: -10px;
+  top: -20px;
   position: relative;
   width: 410.71px;
   z-index: 99;
@@ -154,6 +231,7 @@
 @media screen and (max-width: 1024px) {
   .Home {
     flex-direction: column;
+    width: 85%;
   }
 }
 /*#endregion /Media Queries */

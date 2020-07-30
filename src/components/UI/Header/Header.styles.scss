@@ -6,7 +6,11 @@
   height: 18vh;
   justify-content: space-between;
   margin: auto;
-  width: 85%;
+  width: 70%;
+
+  .Header__hamburger-menu {
+    cursor: pointer;
+  }
 }
 
 /*#region Media Queries */
