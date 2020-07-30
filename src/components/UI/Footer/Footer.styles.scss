@@ -38,7 +38,7 @@
 
       .Footer__short-links {
         padding: 1rem 0;
-        min-width: 240px;
+        min-width: 220px;
 
         & h4 {
           font-size: 22px;
@@ -92,7 +92,21 @@
 }
 
 /*#region Media Queries */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
+  .Footer {
+    .Footer__container {
+      width: 85%;
+
+      .Footer__short-link-container {
+        .Footer__short-links {
+          min-width: 220px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1035px) {
   .Footer {
     .Footer__container {
       width: 85%;
@@ -100,6 +114,23 @@
       .Footer__short-link-container {
         .Footer__short-links {
           min-width: 159px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .Footer {
+    .Footer__container {
+      .Footer__logo-container {
+        .Footer__cta {
+          height: 45px;
+          width: 100px;
+
+          & span {
+            font-size: 16px;
+          }
         }
       }
     }
