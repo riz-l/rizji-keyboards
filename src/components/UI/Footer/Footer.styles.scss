@@ -92,18 +92,6 @@
 }
 
 /*#region Media Queries */
-@media screen and (min-width: 1024px) {
-  .Footer {
-    .Footer__container {
-      .Footer__short-link-container {
-        .Footer__short-links {
-          min-width: 220px;
-        }
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 1035px) {
   .Footer {
     .Footer__container {
