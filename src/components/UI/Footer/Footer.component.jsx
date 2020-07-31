@@ -15,19 +15,19 @@ function Footer() {
         <h3 className="Footer__container-title">All things keyboard</h3>
         <div className="Footer__social-media-container">
           <div className="Footer__social-media-item">
-            <i class="fab fa-discord"></i>
+            <i className="fab fa-discord"></i>
           </div>
           <div className="Footer__social-media-item">
-            <i class="fab fa-twitter"></i>
+            <i className="fab fa-twitter"></i>
           </div>
           <div className="Footer__social-media-item">
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-instagram"></i>
           </div>
           <div className="Footer__social-media-item">
-            <i class="fab fa-facebook-square"></i>
+            <i className="fab fa-facebook-square"></i>
           </div>
           <div className="Footer__social-media-item">
-            <i class="fab fa-youtube"></i>
+            <i className="fab fa-youtube"></i>
           </div>
         </div>
         <div className="Footer__short-link-container">

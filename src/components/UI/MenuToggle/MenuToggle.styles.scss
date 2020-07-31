@@ -1,0 +1,57 @@
+/*#region UI: MenuToggle */
+.MenuToggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 2rem;
+  justify-content: space-around;
+  left: 2rem;
+  padding: 0;
+  position: fixed;
+  top: 5%;
+  width: 2rem;
+  z-index: 99999999;
+
+  &:focus {
+    outline: none;
+  }
+
+  .MenuToggle__first-child-closed {
+    transform: rotate(0);
+  }
+
+  .MenuToggle__second-child-closed {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .MenuToggle__third-child-closed {
+    transform: rotate(0);
+  }
+
+  .MenuToggle__first-child-open {
+    transform: rotate(45deg);
+  }
+
+  .MenuToggle__second-child-open {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  .MenuToggle__third-child-open {
+    transform: rotate(-45deg);
+  }
+
+  & div {
+    background: white;
+    border-radius: 10px;
+    height: 0.25rem;
+    position: relative;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+    width: 2rem;
+  }
+}
+/*#endregion /UI: MenuToggle */
