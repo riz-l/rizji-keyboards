@@ -14,29 +14,29 @@ function Header({ open, setOpen }) {
     <div className="Header">
       <LogoLight />
       <div
-        className="Header__hamburger-menu"
+        className="Header__nav-toggle"
         open={open}
         onClick={() => setOpen(!open)}
       >
         <div
           className={`${
             open
-              ? `Hamburger__first-child-open`
-              : `Hamburger__first-child-closed`
+              ? `Header__nav-toggle-first-child-open`
+              : `Header__nav-toggle-first-child-closed`
           }`}
         />
         <div
           className={`${
             open
-              ? `Hamburger__second-child-open`
-              : `Hamburger__second-child-closed`
+              ? `Header__nav-toggle-second-child-open`
+              : `Header__nav-toggle-second-child-closed`
           }`}
         />
         <div
           className={`${
             open
-              ? `Hamburger__third-child-open`
-              : `Hamburger__third-child-closed`
+              ? `Header__nav-toggle-third-child-open`
+              : `Header__nav-toggle-third-child-closed`
           }`}
         />
       </div>

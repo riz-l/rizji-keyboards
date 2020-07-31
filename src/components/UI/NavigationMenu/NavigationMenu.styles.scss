@@ -1,5 +1,5 @@
-/*#region UI: SideNav */
-.SideNav {
+/*#region UI: NavigationMenu */
+.NavigationMenu {
   background: #5d1f67;
   display: flex;
   flex-direction: column;
@@ -31,13 +31,13 @@
   }
 }
 
-.SideNav__open {
+.NavigationMenu__open {
   transform: translateX(0);
 }
 
 /*#region Media Queries */
 @media (max-width: 576px) {
-  .SideNav {
+  .NavigationMenu {
     width: 100vw;
 
     & p {
@@ -47,4 +47,4 @@
   }
 }
 /*#endregion /Media Queries */
-/*#endregion /UI: SideNav */
+/*#endregion /UI: NavigationMenu */
