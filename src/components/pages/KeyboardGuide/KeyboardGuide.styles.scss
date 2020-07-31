@@ -1,0 +1,152 @@
+/*#region: Page: KeyboardGuide */
+.KeyboardGuide {
+  background: white;
+  color: #230b21;
+  min-height: 80vh;
+  padding-top: 8rem;
+  width: 100%;
+
+  .KeyboardGuide__container {
+    margin: auto;
+    width: 70%;
+
+    .KeyboardGuide__title {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    .KeyboardGuide__information-container {
+      height: auto;
+      margin-top: 2rem;
+
+      .KeyboardGuide__text {
+        font-size: 24px;
+        padding: 2rem 0;
+        width: 100%;
+      }
+
+      & ul {
+        list-style: none;
+        margin-left: 4rem;
+        padding: 2rem 0;
+
+        & li {
+          font-size: 22px;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          & span {
+            padding-right: 1rem;
+            transition: color 0.3s linear;
+          }
+
+          &:hover span {
+            color: #ff00e5;
+            transition: color 0.3s linear;
+          }
+        }
+      }
+    }
+  }
+}
+
+.KeyboardGuide__keyboard-types {
+  background: #230b21;
+  color: white;
+  min-height: 80vh;
+  width: 100%;
+
+  .KeyboardGuide__keyboard-types-container {
+    margin: auto;
+    padding: 4rem 0;
+    width: 70%;
+
+    .KeyboardGuide__keyboard-types-title {
+      font-size: 40px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      & span {
+        transition: color 0.3s linear;
+      }
+
+      &:hover span {
+        color: #ff00e5;
+        transition: color 0.3s linear;
+      }
+    }
+
+    .KeyboardGuide__keyboard-types-information-container {
+      height: auto;
+      margin-top: 2rem;
+
+      .KeyboardGuide__keyboard-types-text {
+        font-size: 24px;
+        padding: 2rem 0;
+        width: 100%;
+      }
+
+      & ul {
+        list-style: none;
+        margin-left: 4rem;
+
+        & li {
+          font-size: 20px;
+          height: auto;
+          flex-wrap: wrap;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          & i {
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*#region Media Queries */
+@media screen and (max-width: 1024px) {
+  .KeyboardGuide {
+    .KeyboardGuide__container {
+      width: 85%;
+
+      .KeyboardGuide__information-container {
+        & ul {
+          margin-left: 1rem;
+          & li {
+            & span {
+              padding-right: 0.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .KeyboardGuide__keyboard-types {
+    .KeyboardGuide__keyboard-types-container {
+      width: 85%;
+
+      .KeyboardGuide__keyboard-types-information-container {
+        & ul {
+          margin-left: 1rem;
+
+          & li {
+            & i {
+              padding-right: 0.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*#endregion /Media Queries */
+/*#endregion: /Page: KeyboardGuide */

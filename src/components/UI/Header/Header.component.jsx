@@ -1,6 +1,7 @@
 // Import: Dependencies
 import React from "react";
 import { bool, func } from "prop-types";
+import { Link } from "react-router-dom";
 
 // Import: Styling
 import "./Header.styles.scss";
@@ -12,7 +13,9 @@ import { ReactComponent as LogoLight } from "../../../assets/images/logo/logo-li
 function Header({ open, setOpen }) {
   return (
     <div className="Header">
-      <LogoLight />
+      <Link to="/">
+        <LogoLight />
+      </Link>
       <div
         className="Header__nav-toggle"
         open={open}

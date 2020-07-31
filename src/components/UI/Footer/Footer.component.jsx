@@ -1,5 +1,6 @@
 // Import: Dependencies
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Import: Styling
 import "./Footer.styles.scss";
@@ -76,7 +77,9 @@ function Footer() {
         </div>
         <hr />
         <div className="Footer__logo-container">
-          <LogoDark />
+          <Link to="/">
+            <LogoDark />
+          </Link>
           <div className="Footer__cta">
             <span>Sign Up</span>
           </div>

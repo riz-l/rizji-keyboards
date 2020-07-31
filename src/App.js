@@ -10,6 +10,7 @@ import "./index.css";
 
 // Import: Pages
 import Home from "./components/pages/Home/Home.component";
+import KeyboardGuide from "./components/pages/KeyboardGuide/KeyboardGuide.component";
 
 // Import: UI
 import Header from "./components/UI/Header/Header.component";
@@ -31,7 +32,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/shop" component={Home} />
-        <Route path="/keyboard-guide" component={Home} />
+        <Route path="/keyboard-guide" component={KeyboardGuide} />
         <Route path="/contact" component={Home} />
         <Route path="/sign-in" component={Home} />
       </Switch>

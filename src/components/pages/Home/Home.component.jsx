@@ -1,5 +1,6 @@
 // Import: Dependencies
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 // Import: Styling
 import "./Home.styles.scss";
@@ -12,6 +13,11 @@ import { ReactComponent as Wave } from "../../../assets/images/pageImages/wave.s
 
 // Page: Home
 function Home() {
+  // Upon navigation to Home, moves DOM to top of window
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <div className="Home">
@@ -22,9 +28,11 @@ function Home() {
             your keyboard needs.
           </p>
           <div className="Home__cta-container">
-            <div className="Home__cta">
-              <span>Shop Now</span>
-            </div>
+            <Link to="/shop">
+              <div className="Home__cta">
+                <span>Shop Now</span>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="Home__image">
@@ -45,9 +53,11 @@ function Home() {
             </p>
             <p>Check out our beginners guide for all things keyboard below.</p>
             <div className="Home__guide-cta-container">
-              <div className="Home__guide-cta">
-                <span>Keyboard Guide</span>
-              </div>
+              <Link to="/keyboard-guide">
+                <div className="Home__guide-cta">
+                  <span>Keyboard Guide</span>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="Home__guide-image">
@@ -65,11 +75,13 @@ function Home() {
             If you're in love with keyboards, you're not alone! We have a super
             helpful (and super dedicated) community waiting for you.
           </p>
-          <div className="Home__community-cta-container">
-            <div className="Home__community-cta">
-              <span>Sign Up</span>
+          <Link to="/sign-in">
+            <div className="Home__community-cta-container">
+              <div className="Home__community-cta">
+                <span>Sign Up</span>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
         <div className="Home__community-image">
           <RobotCommunity />
