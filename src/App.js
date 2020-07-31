@@ -15,7 +15,6 @@ import Header from "./components/UI/Header/Header.component";
 import Footer from "./components/UI/Footer/Footer.component";
 
 import SideNav from "./components/UI/SideNav/SideNav.component";
-import MenuToggle from "./components/UI/MenuToggle/MenuToggle.component";
 
 // Component: App
 function App() {
@@ -26,10 +25,9 @@ function App() {
   return (
     <div className="App">
       <div ref={node}>
-        <MenuToggle open={open} setOpen={setOpen} />
         <SideNav open={open} setOpen={setOpen} />
+        <Header open={open} setOpen={setOpen} />
       </div>
-      <Header />
       <Home />
       <Footer />
     </div>

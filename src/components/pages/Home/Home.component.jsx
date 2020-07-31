@@ -15,7 +15,7 @@ function Home() {
   return (
     <div>
       <div className="Home">
-        <h1 className="Home__title">All things keyboards</h1>
+        <h1 className="Home__title">All things keyboard</h1>
         <div className="Home__information-container">
           <p className="Home__text">
             Whether you're a hobbyist or a fanatic, rizji will look out for all

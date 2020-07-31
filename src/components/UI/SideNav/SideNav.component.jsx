@@ -4,7 +4,6 @@ import { bool } from "prop-types";
 
 // Import: Styling
 import "./SideNav.styles.scss";
-import MenuToggle from "../MenuToggle/MenuToggle.component";
 
 // UI: SideNav
 function SideNav({ open }) {
@@ -19,7 +18,7 @@ function SideNav({ open }) {
 }
 
 // SideNav: TypeChecking
-MenuToggle.propTypes = {
+SideNav.propTypes = {
   open: bool.isRequired,
 };
 
