@@ -1,6 +1,6 @@
 /*#region UI: SideNav */
 .SideNav {
-  background: #3f3d56;
+  background: #5d1f67;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -26,7 +26,7 @@
     transition: color 0.3s linear;
 
     &:hover {
-      color: #0cf3a6;
+      color: #ff00e5;
     }
   }
 }
