@@ -1,5 +1,6 @@
 // Import: Dependencies
 import React, { useState, useRef } from "react";
+import { Switch, Route } from "react-router-dom";
 
 // Import: Hooks
 import { useOnClickOutside } from "./hooks";
@@ -27,7 +28,13 @@ function App() {
         <NavigationMenu open={open} setOpen={setOpen} />
         <Header open={open} setOpen={setOpen} />
       </div>
-      <Home />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/shop" component={Home} />
+        <Route path="/keyboard-guide" component={Home} />
+        <Route path="/contact" component={Home} />
+        <Route path="/sign-in" component={Home} />
+      </Switch>
       <Footer />
     </div>
   );
