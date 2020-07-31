@@ -1,4 +1,9 @@
 /*#region: Page: KeyboardGuide */
+/*#region Section: KeyBoardGuide */
+a {
+  color: #230b21;
+}
+
 .KeyboardGuide {
   background: white;
   color: #230b21;
@@ -23,6 +28,10 @@
         font-size: 24px;
         padding: 2rem 0;
         width: 100%;
+
+        &:last-child {
+          padding-bottom: 4rem;
+        }
       }
 
       & ul {
@@ -32,6 +41,7 @@
 
         & li {
           font-size: 22px;
+          padding: 0.25rem 0;
 
           &:hover {
             cursor: pointer;
@@ -51,7 +61,9 @@
     }
   }
 }
+/*#endregion /Section: KeyBoardGuide */
 
+/*#region Section: KeyBoardTypes */
 .KeyboardGuide__keyboard-types {
   background: #230b21;
   color: white;
@@ -95,12 +107,13 @@
         margin-left: 4rem;
 
         & li {
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
           font-size: 20px;
           height: auto;
-          flex-wrap: wrap;
-          display: flex;
-          align-items: center;
           justify-content: flex-start;
+          padding: 0.25rem 0;
 
           & i {
             padding-right: 1rem;
@@ -110,6 +123,50 @@
     }
   }
 }
+/*#endregion /Section: KeyBoardTypes */
+
+/*#region Section: PCBs */
+.KeyboardGuide__pcbs {
+  background: white;
+  color: #230b21;
+  min-height: 80vh;
+  width: 100%;
+
+  .KeyboardGuide__pcbs-container {
+    margin: auto;
+    padding: 4rem 0;
+    width: 70%;
+
+    .KeyboardGuide__pcb-title {
+      font-size: 40px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      & span {
+        transition: color 0.3s linear;
+      }
+
+      &:hover span {
+        color: #ff00e5;
+        transition: color 0.3s linear;
+      }
+    }
+
+    .KeyboardGuide__pcb-text-container {
+      height: auto;
+      margin-top: 2rem;
+
+      .KeyboardGuide__pcb-text {
+        font-size: 24px;
+        padding: 2rem 0;
+        width: 100%;
+      }
+    }
+  }
+}
+/*#endregion /Section: PCBs */
 
 /*#region Media Queries */
 @media screen and (max-width: 1024px) {
@@ -145,6 +202,12 @@
           }
         }
       }
+    }
+  }
+
+  .KeyboardGuide__pcbs {
+    .KeyboardGuide__pcbs-container {
+      width: 85%;
     }
   }
 }

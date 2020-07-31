@@ -42,7 +42,9 @@ function Footer() {
             </ul>
           </div>
           <div className="Footer__short-links">
-            <h4>Guide</h4>
+            <Link to="/keyboard-guide">
+              <h4>Guide</h4>
+            </Link>
             <ul>
               <li>Keyboard types</li>
               <li>PCBs</li>

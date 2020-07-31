@@ -1,5 +1,5 @@
 // Import: Dependencies
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 
 // Import: Styling
 import "./KeyboardGuide.styles.scss";
@@ -30,12 +30,16 @@ function KeyboardGuide() {
               lot to cover, so please feel free to use our section links below
               if you need to jump to anywhere in particular.
             </p>
-            <ul>
+            <ul className="KeyboardGuide__section-nav">
               <li>
-                <span>#</span>Keyboard Types
+                <a href="#keyboard-types">
+                  <span>#</span>Keyboard Types
+                </a>
               </li>
               <li>
-                <span>#</span>Keyboard PCBs
+                <a href="#pcbs">
+                  <span>#</span>Keyboard PCBs
+                </a>
               </li>
               <li>
                 <span>#</span>Plates
@@ -60,7 +64,7 @@ function KeyboardGuide() {
           </div>
         </div>
       </div>
-      <div className="KeyboardGuide__keyboard-types">
+      <div className="KeyboardGuide__keyboard-types" id="keyboard-types">
         <div className="KeyboardGuide__keyboard-types-container">
           <h2 className="KeyboardGuide__keyboard-types-title">
             <span>#</span> Keyboard Types
@@ -114,6 +118,23 @@ function KeyboardGuide() {
                 Split
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div className="KeyboardGuide__pcbs" id="pcbs">
+        <div className="KeyboardGuide__pcbs-container">
+          <h2 className="KeyboardGuide__pcb-title">
+            <span>#</span> PCBs
+          </h2>
+          <div className="KeyboardGuide__pcb-text-container">
+            <p className="KeyboardGuide__pcb-text">
+              The PCB (Printed Circuit Board) in simple terms is used to connect
+              and support electrical components through conductive pathways
+              engraved into layers of copper on or between layers of
+              non-conductive substrates. The components are usually soldered
+              onto the PCB to bind them into the circuit (this also helps to
+              keep them secure!).
+            </p>
           </div>
         </div>
       </div>
