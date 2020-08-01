@@ -80,7 +80,7 @@ function KeyboardGuide({ open }) {
           <div className="KeyboardGuide__keyboard-types-information-container">
             <p className="KeyboardGuide__keyboard-types-text">
               There are lots and lots of different keyboard sizes, but they are
-              all more or less variations of the common sizes:
+              all more or less variations of the below:
             </p>
             <ul>
               <li>
@@ -93,12 +93,12 @@ function KeyboardGuide({ open }) {
               </li>
               <li>
                 <i className="fas fa-angle-right" />
-                Compact
+                Compact*
               </li>
             </ul>
             <p className="KeyboardGuide__keyboard-types-text">
-              To make things even more fun, compact keyboards vary into the
-              following:
+              *To make things even more fun, compact keyboards vary into the
+              following sizes and layouts:
             </p>
             <ul>
               <li>
@@ -138,13 +138,30 @@ function KeyboardGuide({ open }) {
           </h2>
           <div className="KeyboardGuide__pcb-text-container">
             <p className="KeyboardGuide__pcb-text">
-              The PCB (Printed Circuit Board) in simple terms is used to connect
-              and support electrical components through conductive pathways
-              engraved into layers of copper on or between layers of
-              non-conductive substrates. The components are usually soldered
-              onto the PCB to bind them into the circuit (this also helps to
-              keep them secure!).
+              The PCB (Printed Circuit Board) in simple terms is what makes (in
+              this case) the keyboard work electronically. Without a working
+              PCB, the keys on a keyboard won't transmit signals to a receiving
+              location, such as a desktop PC.
             </p>
+            <p className="KeyboardGuide__pcb-text">
+              The PCB is what communicates to a receiving location that for
+              example, a key press of an 'x' key should be interpreted as an 'x'
+              character, or that a key press of a 'space' key should be
+              interpreted as a 'space' character.
+            </p>
+            <p className="KeyboardGuide__pcb-text">
+              There are two types of PCB that you'll need to know about:
+            </p>
+            <ul>
+              <li>
+                <i className="fas fa-angle-right" />
+                Soldered
+              </li>
+              <li>
+                <i className="fas fa-angle-right" />
+                Hot-swappable
+              </li>
+            </ul>
           </div>
         </div>
       </div>
