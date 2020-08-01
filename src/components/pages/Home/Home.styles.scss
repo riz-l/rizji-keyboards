@@ -37,7 +37,14 @@
         display: flex;
         height: 65px;
         justify-content: center;
+        transition: all 150ms ease-in-out;
         width: 180px;
+
+        &:hover {
+          border: 2px solid rgba(35, 11, 33, 0.2);
+          box-shadow: 0 8px 15px rgba(255, 255, 255, 0.2);
+          transition: all 150ms ease-in-out;
+        }
 
         & span {
           color: #230b21;
@@ -128,7 +135,14 @@
           display: flex;
           height: 65px;
           justify-content: center;
+          transition: all 150ms ease-in-out;
           width: 260px;
+
+          &:hover {
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: all 150ms ease-in-out;
+          }
 
           & span {
             color: white;
@@ -208,7 +222,14 @@
         display: flex;
         height: 65px;
         justify-content: center;
+        transition: all 150ms ease-in-out;
         width: 150px;
+
+        &:hover {
+          border: 2px solid rgba(35, 11, 33, 0.2);
+          box-shadow: 0 8px 15px rgba(255, 255, 255, 0.2);
+          transition: all 150ms ease-in-out;
+        }
 
         & span {
           color: #230b21;
