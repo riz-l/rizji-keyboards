@@ -1,5 +1,5 @@
 // Import: Dependencies
-import React from "react";
+import React, { useEffect } from "react";
 import { bool } from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -8,6 +8,11 @@ import "./NavigationMenu.styles.scss";
 
 // UI: NavigationMenu
 function NavigationMenu({ open, setOpen }) {
+  // Upon navigation from NavigationMenu, moves DOM to top of window
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div
       className={`NavigationMenu ${open ? `NavigationMenu__open` : null}`}

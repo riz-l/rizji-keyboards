@@ -5,14 +5,20 @@ import React, { useEffect } from "react";
 import "./KeyboardGuide.styles.scss";
 
 // Page: KeyboardGuide
-function KeyboardGuide() {
+function KeyboardGuide({ open }) {
   // Upon navigation to KeyboardGuide, moves DOM to top of window
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div>
+    <div
+      style={
+        open
+          ? { filter: "blur(6px)", transition: "filter 0.3s ease-in-out" }
+          : null
+      }
+    >
       <div className="KeyboardGuide">
         <div className="KeyboardGuide__container">
           <h1 className="KeyboardGuide__title">Keyboard Guide</h1>
@@ -38,7 +44,7 @@ function KeyboardGuide() {
               </li>
               <li>
                 <a href="#pcbs">
-                  <span>#</span>Keyboard PCBs
+                  <span>#</span>PCBs
                 </a>
               </li>
               <li>
@@ -67,7 +73,9 @@ function KeyboardGuide() {
       <div className="KeyboardGuide__keyboard-types" id="keyboard-types">
         <div className="KeyboardGuide__keyboard-types-container">
           <h2 className="KeyboardGuide__keyboard-types-title">
-            <span>#</span> Keyboard Types
+            <a href="#keyboard-types" style={{ color: "white" }}>
+              <span>#</span> Keyboard Types
+            </a>
           </h2>
           <div className="KeyboardGuide__keyboard-types-information-container">
             <p className="KeyboardGuide__keyboard-types-text">
@@ -124,7 +132,9 @@ function KeyboardGuide() {
       <div className="KeyboardGuide__pcbs" id="pcbs">
         <div className="KeyboardGuide__pcbs-container">
           <h2 className="KeyboardGuide__pcb-title">
-            <span>#</span> PCBs
+            <a href="#pcbs">
+              <span>#</span> PCBs
+            </a>
           </h2>
           <div className="KeyboardGuide__pcb-text-container">
             <p className="KeyboardGuide__pcb-text">

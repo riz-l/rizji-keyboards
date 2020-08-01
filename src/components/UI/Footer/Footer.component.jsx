@@ -1,5 +1,5 @@
 // Import: Dependencies
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // Import: Styling
@@ -9,9 +9,21 @@ import "./Footer.styles.scss";
 import { ReactComponent as LogoDark } from "../../../assets/images/logo/logo-dark.svg";
 
 // UI: Footer
-function Footer() {
+function Footer({ open }) {
+  // Upon navigation from Footer, moves DOM to top of window
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="Footer">
+    <div
+      className="Footer"
+      style={
+        open
+          ? { filter: "blur(6px)", transition: "filter 0.3s ease-in-out" }
+          : null
+      }
+    >
       <div className="Footer__container">
         <h3 className="Footer__container-title">All things keyboard</h3>
         <div className="Footer__social-media-container">

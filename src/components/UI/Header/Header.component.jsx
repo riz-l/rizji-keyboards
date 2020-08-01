@@ -1,5 +1,5 @@
 // Import: Dependencies
-import React from "react";
+import React, { useEffect } from "react";
 import { bool, func } from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -11,10 +11,21 @@ import { ReactComponent as LogoLight } from "../../../assets/images/logo/logo-li
 
 // UI: Header
 function Header({ open, setOpen }) {
+  // Upon navigation from Header, moves DOM to top of window
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="Header">
       <Link to="/">
-        <LogoLight />
+        <LogoLight
+          style={
+            open
+              ? { filter: "blur(6px)", transition: "filter 0.3s ease-in-out" }
+              : null
+          }
+        />
       </Link>
       <div
         className="Header__nav-toggle"

@@ -30,13 +30,17 @@ function App() {
         <Header open={open} setOpen={setOpen} />
       </div>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/">
+          <Home open={open} />
+        </Route>
         <Route path="/shop" component={Home} />
-        <Route path="/keyboard-guide" component={KeyboardGuide} />
+        <Route path="/keyboard-guide">
+          <KeyboardGuide open={open} />
+        </Route>
         <Route path="/contact" component={Home} />
         <Route path="/sign-in" component={Home} />
       </Switch>
-      <Footer />
+      <Footer open={open} />
     </div>
   );
 }

@@ -12,14 +12,20 @@ import { ReactComponent as RobotCommunity } from "../../../assets/images/pageIma
 import { ReactComponent as Wave } from "../../../assets/images/pageImages/wave.svg";
 
 // Page: Home
-function Home() {
+function Home({ open }) {
   // Upon navigation to Home, moves DOM to top of window
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div>
+    <div
+      style={
+        open
+          ? { filter: "blur(6px)", transition: "filter 0.3s ease-in-out" }
+          : null
+      }
+    >
       <div className="Home">
         <h1 className="Home__title">All things keyboard</h1>
         <div className="Home__information-container">
