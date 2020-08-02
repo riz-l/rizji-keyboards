@@ -42,7 +42,7 @@
 
         &:hover {
           box-shadow: 0 8px 15px rgba(255, 255, 255, 0.2);
-          transform: scale(1.001);
+          opacity: 0.9;
           transition: all 300ms linear;
         }
 
@@ -140,7 +140,7 @@
 
           &:hover {
             box-shadow: 0 8px 15px rgba(35, 11, 33, 0.2);
-            transform: scale(1.001);
+            opacity: 0.9;
             transition: all 300ms ease-in-out;
           }
 
@@ -227,7 +227,7 @@
 
         &:hover {
           box-shadow: 0 8px 15px rgba(255, 255, 255, 0.2);
-          transform: scale(1.001);
+          opacity: 0.9;
           transition: all 300ms ease-in-out;
         }
 
